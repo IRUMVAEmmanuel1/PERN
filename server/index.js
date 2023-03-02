@@ -7,6 +7,25 @@ const pool = require("./db")
 app.use(cors())
 app.use(express.json())
 
+
+
+//ROUTES
+
+
+// Create a todo
+app.post("/todos", async(req, res)=>{
+    try {
+        console.log(req.body);
+        
+    } catch (err) {
+        console.log(err.message)
+        
+    }
+})
+
+//get all todo
+
+// get a todo
 app.listen(5000, () =>{
     console.log("Server has started on port 5000")
 });
