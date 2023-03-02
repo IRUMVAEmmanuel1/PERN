@@ -7,3 +7,5 @@ const pool = new Pool({
     database: "perntodo"
 
 })
+
+module.exports = pool;
