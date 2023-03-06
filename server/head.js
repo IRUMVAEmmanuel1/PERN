@@ -26,8 +26,14 @@ app.post("/todos", async(req, res)=>{
 })
 
 //get all sensors
+try {
+    const {description} = req.body;
+    const newTodo = await pool.query("INSERT INTO todo (description) VALUES($1)",[description]);
+    res.json(newTodo)
+    
 
 // get a sensor
 app.listen(5000, () =>{
     console.log("Server has started on port 5000")
 });
+
