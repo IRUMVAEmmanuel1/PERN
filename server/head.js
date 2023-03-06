@@ -25,3 +25,9 @@ app.post("/todos", async(req, res)=>{
     }
 })
 
+//get all sensors
+
+// get a sensor
+app.listen(5000, () =>{
+    console.log("Server has started on port 5000")
+});
