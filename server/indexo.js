@@ -1,11 +1,11 @@
 import React from 'react'
 
-function indexo() {
+function Head() {
   return (
     <div>
-    <h1>Hello there </h1>
+    Head of departnment
     </div>
   )
 }
 
-export default indexo
+export default Head
